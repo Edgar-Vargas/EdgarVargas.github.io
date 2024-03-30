@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+<body>
+    	<div id="main">
+            <h1>Lyric Quiz Web App</h1>
+
+				
+        <section class="posts">
+            <article>
+                <header>
+                    <h2>Home Page</h2>
+                </header>
+                <a class="image fit"><img src="images/homepage.png" alt="" /></a>
+                <p> Gives the user 2 options for which quiz they want to take. The text changes colors when hovered. The 2 album files are pulled from my local directory. Currently only tested with 2 albums
+                    since obtaining a lyric/album database is part of my other web scraping/database project. </p>
+               
+            </article>
+            <article>
+                <header>
+                    <h2>Video Demo </h2>
+                </header>
+                 <video class="image fit" width="480" height="350" controls>
+                    <source src="images/Demo.mp4" type="video/mp4">
+                    <source src="Demo.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                  </video>
+                <p> Video demo of my web app. The dropdown menu adjusts to each album quiz from parsing through the album file to retrieve a song list. The score resets when the user goes home. I also avoided non-repeat questions
+                    by clearing the folder used for grabbing the questions in the java back-end. When the user selects a quiz from the home page, the questions are randomly generated each time. 
+                </p>
+                
+            </article>
+            <article>
+                <header>
+                    <h2>Song Storage</h2>
+                </header>
+                <a class="image fit"><img src="images/storeSongsAsMap.jpg" alt="" /></a>
+                <p> Iterates through each line of a song file text folder in an album directory. Filters out non-lyrics such as "[Verse 1]" as well as certain accent marks.
+                    The lyric lines that pass through the filter are passed into a lyric array that will be used with helper methods to select random lines for the song. The song with it's random lines chosen are then
+                    added to a map for storage and easier retrieval. </p>
+               
+            </article>
+            <article>
+                <header>
+                    <h2>Saving Song Map to File</h2>
+                </header>
+                <a class="image fit"><img src="images/SaveRandomFile.jpg" alt="" /></a>
+                <p> Method for saving a map of songs as the key and chosen lyrics as the value. I used a for-loop to iterate through the map and save each file as the song name and writes the chosen lyrics 
+                    to the file.  </p>
+               
+            </article>
+            <article>
+                <header>
+                    <h2>Select Random Lines</h2>
+                </header>
+                <a class="image fit"><img src="images/selectRandomLines.jpg" alt="" /></a>
+                <p> Method for grabbing a variable amount of random lines from a lyric array. Used a lyric array since lyrics are usually ordered by lines as opposed to traditional breaks like periods.
+                    Each index for the array represents the next lyric line. 
+                </p>
+               
+            </article>
+            <article>
+                <header>
+                    <h2>JavaScript for questions handler</h2>
+                </header>
+                <a class="image fit"><img src="images/QuestionJS.jpg" alt="" /></a>
+                <p> Javascript code that handles the questions for the front-end portion of the quiz app. Implemented HTML5 web storage to keep track of scores and the question count that can dynamically change
+                    with each album selected. Redirects the user to the score page after the completion of the last question.  </p>
+               
+            </article>
+            <article>
+                <header>
+                    <h2>HTML of questions page</h2>
+                </header>
+                <a class="image fit"><img src="images/questionsHTML.jpg" alt="" /></a>
+                <p>HTML code of the questions page. Drop down menu dynamically changes to list the songs of each album that the user can select from. Passed in variables for the songlist, and the correct
+                    answer for each question from a Song Controller class in the Java back-end. </p>
+               
+            </article>
+        </section>
+        
+           
+  
+
+ 
+
+</div>
+    
+    <script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>

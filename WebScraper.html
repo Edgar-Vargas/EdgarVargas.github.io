@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+<body>
+
+    	<div id="main">
+            <h1>WebScraper</h1>
+
+				
+        <section class="posts">
+            <article>
+                <header>
+                    <h2>Adding to database main</h2>
+                </header>
+                <a class="image fit"><img src="images/addToDB.jpg" alt="" /></a>
+                <p> Main method to organize web crawler that uses helper methods to web crawl through
+                    Lyrics.com. Iterate through a song object list and implements the DAO class to add to SQL database.  </p>
+               
+            </article>
+         
+            <article>
+                <header>
+                    <h2>Grabbing Album Path</h2>
+                </header>
+                <a class="image fit"><img src="images/scrapeForAlbumPath.jpg" alt="" /></a>
+                <p> Implemented Jsoup to connect to web page URL for an artist. Looks through the page to find 
+                    the album name in order to grab the redirect link from the HTML element.  </p>
+               
+            </article>
+            <article>
+                <header>
+                    <h2>Crawl through album page</h2>
+                </header>
+                <a class="image fit"><img src="images/webCrawlThroughAlbumPage.jpg" alt="" /></a>
+                <p> The album page for Lyrics.com contains a table to display song lists. Used nameIndex variable 
+                    to find HTML element that contains song names since multiple discs and variations of released albums can have 
+                    children elements in different orders. Used query to find "Song" column
+                    for the table to iterate through and find the song names in the correct children elements. Grab the URL path 
+                    for each song on the table.   </p>
+               
+            </article>
+            <article>
+                <header>
+                    <h2>Crawl through song page</h2>
+                </header>
+                <a class="image fit"><img src="images/webCrawlThroughSongPage.jpg" alt="" /></a>
+                <p> On the individual song pages, just grab the lyric block element that contains lyrics and title element 
+                    to create song objects. The artist and album name are added later in main method since they are all part 
+                    of the same artist and album. </p>
+               
+            </article>
+            <article>
+                <header>
+                    <h2>DAO Creating database</h2>
+                </header>
+                <a class="image fit"><img src="images/songDB.jpg" alt="" /></a>
+                <p> Create SQL database to store data for the web crawler that I can implement with my Lyric Quiz App.  </p>
+               
+            </article>
+            <article>
+                <header>
+                    <h2>DAO adding song to database</h2>
+                </header>
+                <a class="image fit"><img src="images/addSong.jpg" alt="" /></a>
+                <p>DAO method with parameterized query that uses the song object properties to be used for the SQL query.</p>
+               
+            </article>
+        </section>
+        
+           
+  
+
+ 
+
+</div>
+    
+    <script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>
