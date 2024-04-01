@@ -29,10 +29,14 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-#home-redirect:hover{
+img:hover{
 	cursor: pointer;
+	width: 200%;
 }
-
+img:hover img {
+    
+    height: 500px;
+}
 
 body {
 	line-height: 1;

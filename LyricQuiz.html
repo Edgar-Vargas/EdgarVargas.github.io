@@ -39,7 +39,8 @@
                 <header>
                     <h2>Home Page</h2>
                 </header>
-                <a class="image fit"><img src="images/homepage.png" alt="" /></a>
+                <a class="image fit"><img src="images/homepage.png" 
+                    onclick="window.open('images/homepage.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;"/></a>
                 <p> Gives the user 2 options for which quiz they want to take. The text changes colors when hovered. The 2 album files are pulled from my local directory. Currently only tested with 2 albums
                     since obtaining a lyric/album database is part of my other web scraping/database project. </p>
                
@@ -62,7 +63,8 @@
                 <header>
                     <h2>Song Storage</h2>
                 </header>
-                <a class="image fit"><img src="images/storeSongsAsMap.jpg" alt="" /></a>
+                <a class="image fit"><img src="images/storeSongsAsMap.jpg" 
+                    onclick="window.open('images/storeSongsAsMap.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
                 <p> Iterates through each line of a song file text folder in an album directory. Filters out non-lyrics such as "[Verse 1]" as well as certain accent marks.
                     The lyric lines that pass through the filter are passed into a lyric array that will be used with helper methods to select random lines for the song. The song with it's random lines chosen are then
                     added to a map for storage and easier retrieval. </p>
@@ -72,7 +74,8 @@
                 <header>
                     <h2>Saving Song Map to File</h2>
                 </header>
-                <a class="image fit"><img src="images/SaveRandomFile.jpg" alt="" /></a>
+                <a class="image fit"><img src="images/SaveRandomFile.jpg" 
+                    onclick="window.open('images/SaveRandomFile.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
                 <p> Method for saving a map of songs as the key and chosen lyrics as the value. I used a for-loop to iterate through the map and save each file as the song name and writes the chosen lyrics 
                     to the file.  </p>
                
@@ -81,7 +84,8 @@
                 <header>
                     <h2>Select Random Lines</h2>
                 </header>
-                <a class="image fit"><img src="images/selectRandomLines.jpg" alt="" /></a>
+                <a class="image fit"><img src="images/selectRandomLines.jpg" 
+                    onclick="window.open('images/selectRandomLines.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
                 <p> Method for grabbing a variable amount of random lines from a lyric array. Used a lyric array since lyrics are usually ordered by lines as opposed to traditional breaks like periods.
                     Each index for the array represents the next lyric line. 
                 </p>
@@ -91,7 +95,8 @@
                 <header>
                     <h2>JavaScript for questions handler</h2>
                 </header>
-                <a class="image fit"><img src="images/QuestionJS.jpg" alt="" /></a>
+                <a class="image fit"><img src="images/QuestionJS.jpg" 
+                    onclick="window.open('images/QuestionJS.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
                 <p> Javascript code that handles the questions for the front-end portion of the quiz app. Implemented HTML5 web storage to keep track of scores and the question count that can dynamically change
                     with each album selected. Redirects the user to the score page after the completion of the last question.  </p>
                
@@ -100,7 +105,8 @@
                 <header>
                     <h2>HTML of questions page</h2>
                 </header>
-                <a class="image fit"><img src="images/questionsHTML.jpg" alt="" /></a>
+                <a class="image fit"><img src="images/questionsHTML.jpg" 
+                    onclick="window.open('images/questionsHTML.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
                 <p>HTML code of the questions page. Drop down menu dynamically changes to list the songs of each album that the user can select from. Passed in variables for the songlist, and the correct
                     answer for each question from a Song Controller class in the Java back-end. </p>
                

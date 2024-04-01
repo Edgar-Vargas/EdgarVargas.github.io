@@ -31,7 +31,7 @@
                 <header>
                     <h2>Adding to database main</h2>
                 </header>
-                <a class="image fit"><img src="images/addToDB.jpg" alt="" /></a>
+                <a id="DB-image" class="image fit"><img src="images/addToDB.jpg" alt="" onclick="window.open('images/addToDB.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
                 <p> Main method to organize web crawler that uses helper methods to web crawl through
                     Lyrics.com. Iterate through a song object list and implements the DAO class to add to SQL database.  </p>
                
@@ -41,7 +41,8 @@
                 <header>
                     <h2>Grabbing Album Path</h2>
                 </header>
-                <a class="image fit"><img src="images/scrapeForAlbumPath.jpg" alt="" /></a>
+                <a class="image fit"><img src="images/scrapeForAlbumPath.jpg" 
+                    onclick="window.open('images/scrapeForAlbumPath.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
                 <p> Implemented Jsoup to connect to web page URL for an artist. Looks through the page to find 
                     the album name in order to grab the redirect link from the HTML element.  </p>
                
@@ -50,7 +51,8 @@
                 <header>
                     <h2>Crawl through album page</h2>
                 </header>
-                <a class="image fit"><img src="images/webCrawlThroughAlbumPage.jpg" alt="" /></a>
+                <a class="image fit"><img src="images/webCrawlThroughAlbumPage.jpg"
+                    onclick="window.open('images/webCrawlThroughAlbumPage.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
                 <p> The album page for Lyrics.com contains a table to display song lists. Used nameIndex variable 
                     to find HTML element that contains song names since multiple discs and variations of released albums can have 
                     children elements in different orders. Used query to find "Song" column
@@ -62,7 +64,8 @@
                 <header>
                     <h2>Crawl through song page</h2>
                 </header>
-                <a class="image fit"><img src="images/webCrawlThroughSongPage.jpg" alt="" /></a>
+                <a class="image fit"><img src="images/webCrawlThroughSongPage.jpg"
+                    onclick="window.open('images/webCrawlThroughSongPage.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
                 <p> On the individual song pages, just grab the lyric block element that contains lyrics and title element 
                     to create song objects. The artist and album name are added later in main method since they are all part 
                     of the same artist and album. </p>
@@ -72,7 +75,8 @@
                 <header>
                     <h2>DAO Creating database</h2>
                 </header>
-                <a class="image fit"><img src="images/songDB.jpg" alt="" /></a>
+                <a class="image fit"><img src="images/songDB.jpg"
+                    onclick="window.open('images/songDB.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
                 <p> Create SQL database to store data for the web crawler that I can implement with my Lyric Quiz App.  </p>
                
             </article>
@@ -80,7 +84,8 @@
                 <header>
                     <h2>DAO adding song to database</h2>
                 </header>
-                <a class="image fit"><img src="images/addSong.jpg" alt="" /></a>
+                <a class="image fit"><img src="images/addSong.jpg"
+                    onclick="window.open('images/addSong.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
                 <p>DAO method with parameterized query that uses the song object properties to be used for the SQL query.</p>
                
             </article>
