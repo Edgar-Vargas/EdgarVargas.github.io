@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F9TX43BKQP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F9TX43BKQP');
+</script>
+		<title>My Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F9TX43BKQP"></script>
+
+<body>
+        	<!-- Intro -->
+					<div id="intro">
+						<h3>Edgar Vargas</h3>
+						<h1 id="home-redirect"><a href = "index.html">My Portfolio</a> </h1>
+						<ul class="icons alt">
+							<li><a href="https://www.linkedin.com/in/edgarvargas96/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/Edgar-Vargas" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+
+
+						</ul>
+					
+						</ul> 
+					</div>
+    	<div id="main">
+            <h1>Python Card Game</h1>
+
+				
+        <section class="posts">
+            <article>
+                <header>
+                    <h2>Card Class</h2>
+                </header>
+                <a id="DB-image" class="image fit"><img src="images/hover.png" alt="" onclick="window.open('images/addToDB.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
+                <p> Created Card class to represent a playing card, which utilizes Pygame. The class contains several key attributes: position, number, suit, rank,  
+                    and score value. It also includes class level attributes like card_back_image for displaying the card's back. The card's image is updated based on 
+                    its rank and suit using the update_image method, and its position changes dynamically based on user input.
+                </p>
+               
+            </article>
+         
+            <article>
+                <header>
+                    <h2>Deck Creation</h2>
+                </header>
+                <a class="image fit"><img src="images/OnePair.png" 
+                    onclick="window.open('images/scrapeForAlbumPath.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
+                <p> Constructs a complete deck of cards, iterating through all possible suits 
+                    and ranks to instantiate Card objects and adding them to the deck.
+                    Dynamically creates card images given a list of ranks and values that then assigns a card image property to the Card object by combining the rank and suit into a filename to load
+                    an image of the corresponding card faces from an assets folder.
+                    The deal_cards method deals seven cards to the player by popping cards from the deck, 
+                    positioning them appropriately, updating their table position, and adding them to the game's sprite
+                      group for rendering. </p>
+               
+            </article>
+            <article>
+                <header>
+                    <h2>Pair Tracking</h2>
+                </header>
+                <a class="image fit"><img src="images/LiveHand.png"
+                    onclick="window.open('images/webCrawlThroughAlbumPage.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
+                <p> Used utility methods to implement a dictionary storage method for keeping track of pairs from a given list of cards. The method
+                    checks if a current card rank has been seen during a loop and dynamically adds keys for first instances and adds to their values 
+                    on repeated instances.   </p>
+               
+            </article>
+            <article>
+                <header>
+                    <h2>Priority List</h2>
+                </header>
+                <a class="image fit"><img src="images/FullHouse.png"
+                    onclick="window.open('images/webCrawlThroughSongPage.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
+                <p> Implemented a priority list solution where only the highest value hand is returned and displayed to the user, so a three of a kind or pair
+                    cant override a full house.  </p>
+               
+            </article>
+            <article>
+                <header>
+                    <h2>Features</h2>
+                </header>
+                <a class="image fit"><img src="images/Counters.png"
+                    onclick="window.open('images/songDB.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
+                <p> Key functionalities include: 
+                    <p>
+                    Selection Handling: The card can be selected or deselected by clicking, which moves it to a designated selection area or back to its original position.
+                    <p>
+                    Hover Effects: The card moves slightly when the mouse hovers over it to provide a visual indication of interaction.
+                    <p>
+                    
+                    Image Management: The card's front image is set according to its rank and suit, while the card back image is displayed when appropriate. </p>
+               
+            </article>
+            <article>
+                <header>
+                    <h2>Additional Features </h2>
+                </header>
+                <a class="image fit"><img src="images/Screenshot 2024-05-22 202135.png"
+                    onclick="window.open('images/songDB.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;" /></a>
+                <p> 
+                    <p>
+                        Discard Cards: Click the "Discard" button to discard your current hand and draw new cards from the deck.
+                    <p>
+                        Submit Hand: Click the "Submit Hand" button to evaluate and score your selected hand.
+                    <p>
+                    
+                     </p>
+               
+            </article>
+            
+        </section>
+        
+           
+  
+
+ 
+
+</div>
+    
+    <script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>
